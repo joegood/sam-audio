@@ -37,8 +37,8 @@ class BaseModel(torch.nn.Module, ModelHubMixin):
                 repo_id=model_id,
                 revision=cls.revision,
                 cache_dir=cache_dir,
-                force_download=force_download,
-                proxies=proxies,
+                # force_download=force_download, # jg: 2026-02-22, removing these because the hugging face call changed
+                # proxies=proxies,
                 resume_download=resume_download,
                 token=token,
                 local_files_only=local_files_only,
