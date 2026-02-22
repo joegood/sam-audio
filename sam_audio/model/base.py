@@ -35,6 +35,10 @@ class BaseModel(torch.nn.Module, ModelHubMixin):
                 repo_id=model_id,
                 revision=cls.revision,
                 cache_dir=cache_dir,
+<<<<<<< HEAD
+=======
+                resume_download=resume_download,
+>>>>>>> 9f75c207e78e18b7b8a64d96102b3b642c8ab7f9
                 token=token,
                 local_files_only=local_files_only,
             )
